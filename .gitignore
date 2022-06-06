@@ -1,0 +1,34 @@
+#
+.ipynb_checkpoints
+__pycache__
+
+# models
+modelH5/*
+
+# other
+_plot.png
+graph
+
+# test 
+test videos/
+testdata/dataset/data
+testdata/dataset/monke
+testdata/dataset/RGB
+testdata/dataset/SIGNAL
+testdata/dataset/Skeleton
+testdata/dataset/train2
+testdata/dataset/trained
+testdata/dataset/TRAINRGB
+
+testdata/dataset/pSignal/test/*/*
+testdata/dataset/pSignal/train/*/*
+
+testdata/img/*
+testdata/imgPose/*
+testdata/out/*
+realtime/
+pose/out/*
+data/*
+actRec/img/*
+actRec/out/*
+test.ipynb
