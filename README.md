@@ -69,3 +69,11 @@ $ python main.py -data sict
 ```sh
 $ python main.py -a sict
 ```
+
+<!-- Installation -->
+<!-- ------------ -->
+<!-- The `hub` executable has no dependencies, but since it was designed to wrap -->
+<!-- `git`, it's recommended to have at least **git 1.7.3** or newer. -->
+<!-- platform | manager | command to run -->
+<!-- ---------|---------|--------------- -->
+<!-- macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub` -->
