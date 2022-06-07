@@ -1,6 +1,7 @@
 import cv2
 from datetime import datetime
 from Ds5sD import PoseBased
+import sys
 def app():
     cap=cv2.VideoCapture("./test videos/b1.webm")
     t=True
@@ -35,6 +36,12 @@ def app():
     cap.release()
     out.release()
     cv2.destroyAllWindows()
-
+def dataProcess():
+    pd=PoseBased()
+    pd.processData()
 if __name__ == "__main__":
-    app()
+    args = sys.argv[1:]
+    if args[0] == '-a':
+        app()
+    elif args[0] == '-d' or args[0] == '-data':
+        dataProcess()

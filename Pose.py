@@ -20,15 +20,15 @@ classes=['', '', 'Deeshee', 'ZVVN', 'duussan', '', 'zogson']
 
 
 # 98.53
-model=load_model('./model/AR_Skeleton_based_signal_V1.h5')
+model=load_model('./modelH5/AR_Skeleton_based_signal_V1.h5')
 # 92.53
 # model=load_model('./model/AR_Skeleton_based_V12.h5')
 
 
 def dataProcess(filename,name):
-    outPath=f'./model/testdata/out/{datetime.today().strftime("%Y%m%d")}'
-    imgPath=f'./model/testdata/img/{datetime.today().strftime("%Y%m%d")}'
-    imgPathPose=f'./model/testdata/imgPose/{datetime.today().strftime("%Y%m%d")}'
+    outPath=f'./testdata/out/{datetime.today().strftime("%Y%m%d")}'
+    imgPath=f'./testdata/img/{datetime.today().strftime("%Y%m%d")}'
+    imgPathPose=f'./testdata/imgPose/{datetime.today().strftime("%Y%m%d")}'
     # nowDate=datetime.now()
     nowDate=datetime.now().strftime("%T%m%S")
     try:
