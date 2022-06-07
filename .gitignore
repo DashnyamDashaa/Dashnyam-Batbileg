@@ -3,7 +3,8 @@
 __pycache__
 
 # models
-modelH5/*
+/modelH5/*
+!/modelH5/readme.md
 
 # other
 _plot.png
@@ -29,6 +30,8 @@ testdata/out/*
 realtime/
 pose/out/*
 data/*
+!/data/readme.md
+
 # actRec/img/*
 # actRec/out/*
 test.ipynb
