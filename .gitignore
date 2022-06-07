@@ -29,6 +29,6 @@ testdata/out/*
 realtime/
 pose/out/*
 data/*
-actRec/img/*
-actRec/out/*
+# actRec/img/*
+# actRec/out/*
 test.ipynb
