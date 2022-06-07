@@ -44,6 +44,30 @@ $ pip install tensorflow
 $ pip install keras
 #=> keras install 
 ```
+(Эхлэх)
+-------------
+```sh
+$ git clone git@github.com:DashnyamDashaa/Dashnyam-Batbileg.git
+$ cd Dashnyam-Batbileg
+```
+(Өгөгдөл боловсруулах)
+-------
+```sh
+$
+$
+```
+(Дахин сургах)
+-------
+```sh
+$
+$
+```
+(Үндсэн ажиллаггаа)
+-------
+```sh
+$
+$
+```
 
 
 <!-- Installation -->
