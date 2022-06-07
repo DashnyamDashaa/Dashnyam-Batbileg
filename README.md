@@ -59,22 +59,13 @@ $ python main.py -data
 ```
 (Дахин сургах)
 -------
+### [Дахин сургахын өмнө](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/testdata/readme.md) өгөгдөл бэлдсэн байх шаардлагатай юм. Мөн сургах загвараа сонгохдоо `sict`, `vgg16`, `simple` зэргээс сонгон дүрслэнэ. Дахин сургалт дууссны дараа [хадгалагдна](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/modelH5/readme.md).
 ```sh
-$
-$
+$ python main.py -data sict
 ```
 (Үндсэн ажиллаггаа)
 -------
+### Үндсэн ажиллаггааны өмнө болон [Дахин сургах](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/testdata/readme.md) болон [загвар](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/modelH5/readme.md) үүссэн байх шаардлагатай юм. Мөн сургах загвараа сонгохдоо `sict`, `vgg16`, `simple` зэргээс сонгон дүрслэнэ. Дахин сургалт дууссны дараа [хадгалагдна](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/modelH5/readme.md).
 ```sh
-$
-$
+$ python main.py -a sict
 ```
-
-
-<!-- Installation -->
-<!-- ------------ -->
-<!-- The `hub` executable has no dependencies, but since it was designed to wrap -->
-<!-- `git`, it's recommended to have at least **git 1.7.3** or newer. -->
-<!-- platform | manager | command to run -->
-<!-- ---------|---------|--------------- -->
-<!-- macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub` -->

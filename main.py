@@ -1,6 +1,8 @@
+from ast import arg
 import cv2
 from datetime import datetime
 from Ds5sD import PoseBased
+from Train import acRec
 import sys
 def app():
     cap=cv2.VideoCapture("./test videos/b1.webm")
@@ -42,6 +44,30 @@ def dataProcess():
 if __name__ == "__main__":
     args = sys.argv[1:]
     if args[0] == '-a':
-        app()
+        if(len(args)==2):
+            train=acRec(args[1])
+            if(args[1]=="vgg16"):
+                app(args[1])
+            elif(args[1]=="sict"):
+                app(args[1])
+            elif(args[1]=="simple"):
+                app(args[1])
+            else:
+                print("not found "+args[1]+" just for vgg16, sict, simple")
+        else:
+            print("2 utga baina (-a SaveModelName)")
     elif args[0] == '-d' or args[0] == '-data':
         dataProcess()
+    elif args[0] == '-t' or args[0] == '-train':
+        if(len(args)==2):
+            train=acRec(args[1])
+            if(args[1]=="vgg16"):
+                train.processVGG16()
+            elif(args[1]=="sict"):
+                train.processsict()
+            elif(args[1]=="simple"):
+                train.processsimple()
+            else:
+                print("not found "+args[1]+" just for vgg16, sict, simple")
+        else:
+            print("2 utga baina (-train SaveModelName)")

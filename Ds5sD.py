@@ -13,10 +13,12 @@ mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(min_detection_confidence=0.5,min_tracking_confidence=0.5)
 draw=mp_drawing.DrawingSpec((12, 24, 224), 2, 10)
 drawline=mp_drawing.DrawingSpec((224, 224, 224),25, 35)
-classes=['2_Degee', 'BARUUN', 'Deeshee', 'ZVVN', 'dooshoo', 'duussan', 'zogson']
+# classes=['2_Degee', 'BARUUN', 'Deeshee', 'ZVVN', 'dooshoo', 'duussan', 'zogson']
 # model=load_model('./modelH5/AR_Skeleton_based_signal_RGB_V1.h5')
 
 class PoseBased:
+    def __init__(self,modelName):
+        self.model=load_model("./modelH5/"+modelName+".h5")
     def getMax(self, arr):
         max=[0,0]
         
@@ -73,9 +75,9 @@ class PoseBased:
         img = img_to_array(img)
         img = img.reshape(1, 224, 224, 3)
         img = img.astype('float32')
-        result = model.predict(img)
+        result = self.model.predict(img)
         max=self.getMax(result[0])
-        Action = classes[max[1]]
+        Action = str(max[1])
         Accuracy = max[0]
         x=blank_image.shape[0]*0.32
         y=blank_image.shape[1]*0.05
