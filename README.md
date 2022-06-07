@@ -1,29 +1,55 @@
-hub is a command line tool that wraps `git` in order to extend it with extra
-features and commands that make working with GitHub easier.
+# Нейроны сүлжээ ашиглан хүний үйл хөдлөлийг таних асуудалд
+## Амарсайхан Дашням, Төмөрбаатар Батбилэг
+Хүний байрлалыг тооцоолох нь хүний зан үйлийг таних, хөдөлгөөнийг
+бүртгэх, бодит байдлыг нэмэгдүүлэх, роботуудыг сургах, хөдөлгөөн хянах
+гэх мэт асар их ашиг тустай, хүний амьдралыг сайжруулах боломжит хэ-
+рэглээ учраас сүүлийн үед компьютерын харааны асуудлын гол сэдэв болоод
+байна. Deep Learning-тэй хэрэгжсэн орчин үеийн олон аргууд нь хэд хэдэн со-
+рилтыг даван туулж, хүний байрлалыг тооцоолох салбарт гайхалтай үр дүнг
+авчирсан. Арга барил нь хоёр үе шаттай (дээрээс доош чиглэсэн хандлага)
+ба хэсэгчилсэн (доороос дээш хандлага) гэж хоёр ангилдаг. Хоёр үе шаттай
+систем нь эхлээд хүн илрүүлэгчийг суулгаж, дараа нь хайрцаг тус бүрийн
+байрлалыг бие даан тооцдог бол зураг дээрх биеийн бүх хэсгийг илрүүлж,
+тодорхой хүмүүст хамаарах хэсгүүдийг холбох нь хэсэгчилсэн системд хийгд-
+дэг. Энэхүү систем дээр суурилсан үйл хөдлөл таних аргачлалын судлан,
+турших болно.Хиймэл оюун ухаан болон машин сургалт, нейрон сүлжээн та-
+лаарх үндсэн ойлголт. Хүний биеийн бүтцийг тодорхойлох арга барилуудын
+судалгаа хийж, Хүний үйл хөдлөлийг таних арга барилуудаас Optical flow[7],
+хэт улаан туяаны гэрлийн камер[1], хүний биеийн бүтцийн [2]гэх мэт олон
+арга барил байдаг боловч аль нь үлүү болох нь эргэлзээтэй юм. Бүгд өөр
+өөрийн өвөрмөц шийдэлтэй ба давуу болон сул талтай юм. Үзэгдэх орчин
+хязгаарлагдмал, байгалын нөхцөл, шуугиан, эмх замбараагүй байдал гэх мэт
+үзүүлэлтийг давуу талаараа нөхөж болдог ч сөрөг тал байсаар байна. Үүнд:
+Техник, технологи, болон арга барилаас хамаарсан сул талууд юм. RGB бо-
+лон Хүний биеийн бүтцийг сонгон авч өгөгдөл бэлдэн, харилцуулан дүгнэх
+юм.
 
-<!-- [contact Support](https://github.com/contact) -->
 
-Usage
+Орчин
 -----
 
 ``` sh
-$ hub clone rtomayko/tilt
-#=> git clone https://github.com/rtomayko/tilt.git
+$ python -m pip install -U pip
+$ python -m pip install -U matplotlib
+#=> matplotlib install
 
-# or, if you prefer the SSH protocol:
-$ git config --global hub.protocol ssh
-$ hub clone rtomayko/tilt
-#=> git clone git@github.com:rtomayko/tilt.git
+$ sudo apt install libopencv-dev python3-opencv
+#=> cv2 install 
+
+$ pip install mediapipe
+#=> mediapipe install 
+
+$ pip install tensorflow
+#=> tensorflow install 
+$ pip install keras
+#=> keras install 
 ```
 
 
-Installation
-------------
-
-The `hub` executable has no dependencies, but since it was designed to wrap
-`git`, it's recommended to have at least **git 1.7.3** or newer.
-
-platform | manager | command to run
----------|---------|---------------
-macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub`
-
+<!-- Installation -->
+<!-- ------------ -->
+<!-- The `hub` executable has no dependencies, but since it was designed to wrap -->
+<!-- `git`, it's recommended to have at least **git 1.7.3** or newer. -->
+<!-- platform | manager | command to run -->
+<!-- ---------|---------|--------------- -->
+<!-- macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub` -->
