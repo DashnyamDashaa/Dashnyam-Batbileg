@@ -32,7 +32,7 @@ $ cd Dashnyam-Batbileg
 -------
 ### [Өгөгдөл боловсруулахын өмнө](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/data/readme.md) өгөгдөл бэлдсэн байх шаардлагатай юм.
 ```sh
-$ mkdir testdata/out $$ testdata/img
+$ mkdir testdata/out $$ mkdir testdata/img
 $ python main.py -data
 ```
 (Дахин сургах)
