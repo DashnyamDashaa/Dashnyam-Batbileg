@@ -18,7 +18,8 @@ drawline=mp_drawing.DrawingSpec((224, 224, 224),25, 35)
 
 class PoseBased:
     def __init__(self,modelName):
-        self.model=load_model("./modelH5/"+modelName+".h5")
+        if(modelName!="DP..."):
+            self.model=load_model("./modelH5/"+modelName+".h5")
     def getMax(self, arr):
         max=[0,0]
         
@@ -167,6 +168,8 @@ class PoseBased:
     def processData(self):
         if(len(os.listdir("./data"))>1):
             for folder in os.listdir("./data"):
+                if(folder=="readme.md"):
+                    continue
                 for video in os.listdir("./data/"+folder):
                     self.data("./data/"+folder+"/"+video,folder)
         else :

@@ -20,7 +20,10 @@ classes=['', '', 'Deeshee', 'ZVVN', 'duussan', '', 'zogson']
 
 
 # 98.53
-model=load_model('./modelH5/AR_Skeleton_based_signal_V1.h5')
+try:
+    model=load_model('./modelH5/sict.h5')
+except :
+    print('' , end = '')
 # 92.53
 # model=load_model('./model/AR_Skeleton_based_V12.h5')
 

@@ -16,7 +16,7 @@ from tensorflow.keras.optimizers import SGD
 from keras.models import Model
 
 import tensorflow as tf
-from keras.utils.vis_utils import plot_model
+# from keras.utils.vis_utils import plot_model
 import sys
 class TransformerEncoder(layers.Layer):
     def __init__(self, embed_dim, dense_dim, num_heads, **kwargs):
@@ -301,7 +301,7 @@ class acRec:
         self.history = model.fit(train_it, steps_per_epoch=len(train_it),validation_data=test_it, validation_steps=len(test_it), epochs=3, verbose=1)
         _, acc = model.evaluate(test_it, steps=len(test_it), verbose=0)
         print(f"Test accuracy: {round(acc * 100, 2)}%")
-        model.save(str(self.modelName)+'.h5')
+        model.save(str(self.modeName)+'.h5')
         return model
         
         
@@ -338,9 +338,9 @@ class acRec:
 #         model=self.simple()
         model=self.vgg16()
         model.summary() 
-        plot_model(model, to_file='model_plot.png', show_shapes=False, show_layer_names=True)
+        # plot_model(model, to_file='model_plot.png', show_shapes=False, show_layer_names=True)
         model=self.modelFit(model,train_it,test_it)
-        self.summarize_diagnostics(self.history)
+        # self.summarize_diagnostics(self.history)
         return model
     def processsimple(self,path):
 #         dataTrain,labelTrain=self.drictor(path)
@@ -358,9 +358,9 @@ class acRec:
 
         model=self.simple()
         model.summary() 
-        plot_model(model, to_file='model_plot.png', show_shapes=False, show_layer_names=True)
+        # plot_model(model, to_file='model_plot.png', show_shapes=False, show_layer_names=True)
         model=self.modelFit(model,train_it,test_it)
-        self.summarize_diagnostics(self.history)
+        # self.summarize_diagnostics(self.history)
         return model
     def processsict(self,path):
 #         dataTrain,labelTrain=self.drictor(path)
@@ -376,8 +376,8 @@ class acRec:
         
         model=self.sict()
         model.summary() 
-        plot_model(model, to_file='model_plot.png', show_shapes=False, show_layer_names=True)
+        # plot_model(model, to_file='model_plot.png', show_shapes=False, show_layer_names=True)
         model=self.modelFit(model,train_it,test_it)
-        self.summarize_diagnostics(self.history)
+        # self.summarize_diagnostics(self.history)
         return model
     

@@ -4,10 +4,10 @@ from datetime import datetime
 from Ds5sD import PoseBased
 from Train import acRec
 import sys
-def app():
-    cap=cv2.VideoCapture("./test videos/b1.webm")
+def app(modelname):
+    cap=cv2.VideoCapture(0)
     t=True
-    pd=PoseBased()
+    pd=PoseBased(modelname)
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     tf=True
     i,save=0,0
@@ -39,7 +39,7 @@ def app():
     out.release()
     cv2.destroyAllWindows()
 def dataProcess():
-    pd=PoseBased()
+    pd=PoseBased("DP...")
     pd.processData()
 if __name__ == "__main__":
     args = sys.argv[1:]
@@ -62,11 +62,11 @@ if __name__ == "__main__":
         if(len(args)==2):
             train=acRec(args[1])
             if(args[1]=="vgg16"):
-                train.processVGG16()
+                train.processVGG16("testdata/dataset/trained")
             elif(args[1]=="sict"):
-                train.processsict()
+                train.processsict("testdata/dataset/trained")
             elif(args[1]=="simple"):
-                train.processsimple()
+                train.processsimple("testdata/dataset/trained")
             else:
                 print("not found "+args[1]+" just for vgg16, sict, simple")
         else:

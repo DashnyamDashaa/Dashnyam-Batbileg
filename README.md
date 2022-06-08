@@ -32,14 +32,14 @@ $ cd Dashnyam-Batbileg
 -------
 ### [Өгөгдөл боловсруулахын өмнө](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/data/readme.md) өгөгдөл бэлдсэн байх шаардлагатай юм.
 ```sh
-$ mkdir testdata/out $$ mkdir testdata/img
+$ mkdir testdata/out && mkdir testdata/img && testdata/imgPose
 $ python main.py -data
 ```
 (Дахин сургах)
 -------
 ### [Дахин сургахын өмнө](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/testdata/readme.md) өгөгдөл бэлдсэн байх шаардлагатай юм. Мөн сургах загвараа сонгохдоо `sict`, `vgg16`, `simple` зэргээс сонгон дүрслэнэ. Дахин сургалт дууссаны дараа [хадгалагдана](https://github.com/DashnyamDashaa/Dashnyam-Batbileg/blob/master/modelH5/readme.md).
 ```sh
-$ python main.py -data sict
+$ python main.py -train sict
 ```
 (Үндсэн ажиллаггаа)
 -------
