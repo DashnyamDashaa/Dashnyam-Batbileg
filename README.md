@@ -55,3 +55,4 @@ $ python main.py -a sict
 <!-- platform | manager | command to run -->
 <!-- ---------|---------|--------------- -->
 <!-- macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub` -->
+### [(Ажлуулах заавар)](https://youtu.be/0_8ObkRV6I8)
