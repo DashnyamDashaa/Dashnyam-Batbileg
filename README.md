@@ -14,8 +14,8 @@
 дэг. Энэхүү систем дээр суурилсан үйл хөдлөл таних аргачлалын судлан,
 турших болно.Хиймэл оюун ухаан болон машин сургалт, нейрон сүлжээн та-
 лаарх үндсэн ойлголт. Хүний биеийн бүтцийг тодорхойлох арга барилуудын
-судалгаа хийж, Хүний үйл хөдлөлийг таних арга барилуудаас [Optical flow](https://www.facebook.com/batbileg.0724),
-[хэт улаан туяаны гэрлийн камер](https://www.facebook.com/batbileg.0724), [хүний биеийн бүтцийн](https://www.facebook.com/batbileg.0724)гэх мэт олон
+судалгаа хийж, Хүний үйл хөдлөлийг таних арга барилуудаас [Optical flow](https://en.wikipedia.org/wiki/Optical_flow),
+[хэт улаан туяаны гэрлийн камер](https://www.researchgate.net/publication/274091798_Human_Detection_Based_on_the_Generation_of_a_Background_Image_by_Using_a_Far-Infrared_Light_Camera), [хүний биеийн бүтцийн](https://arxiv.org/abs/2104.11712?fbclid=IwAR2SwqSOHi3if7cFbnEd6QOMFZw_1StPRkvL7WFktVRWG1afYWZmmBTz2l4#:~:text=Skeletor%3A%20Skeletal%20Transformers%20for%20Robust%20Body%2DPose%20Estimation,-Tao%20Jiang%2C%20Necati&text=Predicting%203D%20human%20pose%20from,in%20estimating%203D%20from%202D)гэх мэт олон
 арга барил байдаг боловч аль нь үлүү болох нь эргэлзээтэй юм. Бүгд өөр
 өөрийн өвөрмөц шийдэлтэй ба давуу болон сул талтай юм. Үзэгдэх орчин
 хязгаарлагдмал, байгалын нөхцөл, шуугиан, эмх замбараагүй байдал гэх мэт
